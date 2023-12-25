@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { BiAlarm } from "react-icons/bi";
 
 
 const NavBar = () => {
@@ -26,7 +27,7 @@ const NavBar = () => {
                     </ul>
 
                 </div>
-                <Link to={"/"}><a className="btn btn-ghost text-xl">SCC Technovision Inc.</a></Link>
+                <Link to={"/"}><a className="btn btn-ghost text-xl"><BiAlarm />SCC Technovision Inc.</a></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
 
@@ -40,7 +41,7 @@ const NavBar = () => {
 
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn rounded-full">Button</a>
             </div>
         </div>
     );
