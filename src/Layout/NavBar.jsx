@@ -8,7 +8,6 @@ const NavBar = () => {
         <Link to={"/"}><li><a>Home</a></li></Link>
         <Link to={"/dashboard"}><li><a>Dashboard</a></li></Link>
         <Link to={"/login"}><li><a>Login</a></li></Link>
-        <Link to={"/signUp"}><li><a>Register</a></li></Link>
     </>
 
     return (
