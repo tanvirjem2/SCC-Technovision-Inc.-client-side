@@ -3,10 +3,15 @@ import { FcGoogle } from "react-icons/fc";
 
 
 const LogIn = () => {
+
+    const handleLogin = e => {
+        e.preventDefault();
+    }
+
     return (
         <div>
             <div className="border-2 rounded-lg p-5 lg:p-10 lg:w-1/2 mx-auto mt-10">
-                <form >
+                <form onSubmit={handleLogin}>
                     <h1 className='text-[40px] font-semibold text-center'>Login</h1>
                     <h1 className='text-[18px] font-semibold mb-5'>Email</h1>
                     <input className='border-2 rounded-lg p-3 mb-7 w-full' placeholder='Your email' type="email" name="email" id="" />
